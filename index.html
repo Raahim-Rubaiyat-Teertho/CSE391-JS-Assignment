@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Assignment 2</title>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#quote-box">Quote Box</a>
+        <a href="#hero-converter">Hero Converter</a>
+        <a href="#series">Series</a>
+        <a href="#magic">Magic!</a>
+    </nav>
+
+        <div id="quote-box">
+            <h2>Quote Box</h2>
+        </div>
+
+        <div class="quote-box-text">
+            <p id="box-text">True wisdom comes not from knowledge, but from understanding.</p>
+        </div>
+
+        <div class="quote-buttons">
+            <button class="green" onclick=handleGreen()></button>
+            <button class="yellow" onclick=handleYellow()></button>
+            <button class="blue" onclick=handleBlue()></button>
+            <button class="red" onclick=handleRed()></button>
+        </div>
+
+        <div id="hero-converter">
+            <h2>Hero Converter</h2>
+        </div>
+
+        <div id="hero-form">
+            <form id="hero-form-inner">
+                <label for="hero_conv">Convert</label>
+                <input type="number" name="hero_conv" id="conv">
+                <select name="conversion_box" id="conv_options">
+                    <option value="lbtokg">lb to kg</option>
+                    <option value="kgtolb">kg to lb</option>
+                </select>
+                <button type="submit" class="go_button">Go</button>
+                <p id="created"></p>
+            </form>
+        </div>
+
+        <div id="series">
+            <h2>Series Calculator</h2>
+        </div>
+
+        <div id="series-from">
+            <form id="series-form-inner">
+                <label for="series_cal" id="series_label">Input Series Of Number</label>
+                <input type="text" id="series_nums">
+            </form>
+        </div>
+
+        <div id="series_ans">
+            <p id="max">Max: </p>
+            <p id="min">Min: </p>
+            <p id="sum">Sum: </p>
+            <p id="avg">Average: </p>
+            <p id="rev">Reverse Order: </p>
+        </div>
+
+        <div id="magic">
+            <h2>Magic!</h2>
+        </div>
+
+        <div id="magic-form">
+            <form id="magic-form-inner">
+                <textarea id="magic-text" cols="50" rows="15"></textarea>
+                <div id="magic-buttons">
+                    <button type="button" id="clear" onclick=handleClear()>Clear It</button>
+                    <button type="button" id="caps" onclick=handleCaps()>Capitalize</button>
+                    <button type="button" id="sort" onclick=handleSort()>Sort</button>
+                    <button type="button" id="reverse" onclick=handleRev()>Reverse</button>
+                    <button type="button" id="strip" onclick=handleStrip()>Strip Blank</button>
+                    <button type="button" id="addnum" onclick=handleAddNum()>Add Numbers</button>
+                    <button type="button" id="shuffle" onclick=handleShuffle()>Shuffle</button>
+                </div>
+            </form>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>
